@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cover-page {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .cover-page header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .cover-page h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .cover-page tagline {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .cover-page quote-section {
+    padding: 20px;
+  }
+  
+  .cover-page quote {
+    font-size: 1.2em;
+    color: #0077b6;
+  }
+  
+  .facts-section {
+    padding: 20px;
+  }
+  
+  .cover-page h2 {
+    font-size: 2em;
+    color: #0077b6;
+  }
+  
+  .facts-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .facts-section li {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5em;
+    }
+  
+    .tagline {
+      font-size: 1.2em;
+    }
+  }
+   

@@ -1,0 +1,21 @@
+/* Dashboard.css */
+.dashboard{
+  color: #3416a1;
+}
+
+.dashboard-item {
+  padding: 20px;
+  border: 1px solid #0a1495;
+  margin: 10px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.form-item {
+  background-color: #3416a1;
+}
+
+.image-item {
+  background-color: #e0e0e0;
+}
+

@@ -1,0 +1,152 @@
+.nav__menu {
+  background-color: hsl(0, 0%, 93%);
+  position: fixed;
+  inset-block: 0;
+  left: -100%;
+  width: 100%;
+  /* padding: 30px 30px; */
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.175, 1);
+  z-index: 100;
+}
+
+.show-menu {
+  left: 0;
+}
+
+.nav ul li {
+  list-style-type: none;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  border-bottom: 1px solid hsl(0, 0%, 87%);
+  padding-block: 14px;
+}
+
+.dark-theme .nav__link {
+  border-color: hsl(0, 0%, 20%);
+}
+
+.nav__icon,
+.nav__name {
+  color: hsl(0, 0%, 40%);
+  font-size: 24px;
+}
+
+.nav__name {
+  font-weight: 500;
+}
+
+.active_link .nav__icon,
+.active_link .nav__name {
+  color: hsl(220, 76%, 53%);
+}
+
+.nav__toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px 10px;
+  transition: all 0.5s cubic-hezier(0.77, 0.2, 0.05, 1);
+  z-index: 100;
+}
+
+.nav__toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+.animate-toggle span:first-child {
+  transform: rotate(45deg) translate(6px, 4px);
+}
+
+.animate-toggle span:nth-child(2) {
+  display: none;
+}
+
+.animate-toggle span:last-child {
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__menu {
+    all: unset;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    inset-block: 0;
+    right: 27px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .nav__item {
+    margin-block: 20px;
+  }
+
+  .nav__link {
+    padding: 0;
+    border-bottom: none;
+    background-color: hsl(0, 0%, 93%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .nav__icon {
+    font-size: 20px;
+    margin-inline: auto;
+  }
+
+  .nav__name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsl(220, 76%, 53%);
+    /* height: 90%; */
+    line-height: 35px;
+    padding-inline: 30px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+
+  .nav__link:hover .nav__name {
+    right: 27px;
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+    border-radius: 30px 0 0 30px;
+  }
+
+  .nav__link:hover,
+  .active-nav {
+    background-color: hsl(220, 76%, 53%);
+  }
+
+  .nav__link:hover .nav__icon,
+  .active-nav .nav__icon {
+    color: #fff;
+  }
+}
