@@ -39,7 +39,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <UpdateForm
                 heading="Online Expense"
-                apiUrl="http://localhost:5000/api/online"
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/online"
                 style={{marginTop: 10}}
               />
             </Col>
@@ -73,7 +73,7 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -72, marginTop: 4 }}>
               <UpdateForm
                 heading="Electricity Expense"
-                apiUrl="http://localhost:5000/api/consumption"
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
                 style={{height: 450}}
               />
             </Col>
@@ -88,7 +88,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <UpdateForm
                 heading="Investment"
-                apiUrl="http://localhost:5000/api/investment"
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/investment"
                 style={{marginTop: 10}}
               />
             </Col>
@@ -123,7 +123,7 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Travel Expense"
-                apiUrl="http://localhost:5000/api/travel"
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/travel"
                 style={{height: 450}}
               />
             </Col>
@@ -138,7 +138,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <ExpenseForm
                 heading="Personal Expenses"
-                apiUrl="http://localhost:5000/api/personal"
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/personal"
                 style={{marginTop: 10}}
               />
             </Col>
@@ -173,7 +173,7 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Liability"
-                apiUrl="http://localhost:5000/api/consumption"
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
                 style={{height: 450}}
               />
             </Col>
@@ -188,7 +188,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <ExpenseForm
                 heading="Salary"
-                apiUrl="http://localhost:5000/api/salary"
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/salary"
                 style={{marginTop: 10}}
               />
             </Col>

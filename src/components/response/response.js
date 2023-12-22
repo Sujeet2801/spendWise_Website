@@ -49,40 +49,40 @@ export default function Response() {
             {/* Electricity Expense Chart */}
             <ConsumptionChart
               heading="Electricity Expense Chart"
-              apiUrl={`http://localhost:5000/api/consumption/${username}`}
+              apiUrl={`https://backend-orpin-kappa.vercel.app/api/consumption/${username}`}
               id="myChart1" // Unique ID for the first chart
             />
             {/* Online Expense Chart */}
             <ConsumptionChart
               heading="Online Expense Chart"
-              apiUrl={`http://localhost:5000/api/online/${username}`}
+              apiUrl={`https://backend-orpin-kappa.vercel.app/api/online/${username}`}
               id="myChart2" // Unique ID for the second chart
             />
             {/* Investment Chart */}
             <ConsumptionChart
               heading="Investment Chart"
-              apiUrl={`http://localhost:5000/api/investment/${username}`}
+              apiUrl={`https://backend-orpin-kappa.vercel.app/api/investment/${username}`}
               id="myChart3" // Unique ID for the third chart
             />
 
             {/* Salary Chart */}
             <ConsumptionChart
               heading="Salary Chart"
-              apiUrl={`http://localhost:5000/api/salary/${username}`}
+              apiUrl={`https://backend-orpin-kappa.vercel.app/api/salary/${username}`}
               id="myChart4" // Unique ID for the third chart
             />
 
             {/* Travel Expense Chart */}
             <ConsumptionChart
               heading="Travel Expense Chart"
-              apiUrl={`http://localhost:5000/api/travel/${username}`}
+              apiUrl={`https://backend-orpin-kappa.vercel.app/api/travel/${username}`}
               id="myChart5" // Unique ID for the third chart
             />
 
             {/* Personal Expenses */}
             <ConsumptionChart
               heading="Personal Expenses Chart"
-              apiUrl={`http://localhost:5000/api/personal/${username}`}
+              apiUrl={`https://backend-orpin-kappa.vercel.app/api/personal/${username}`}
               id="myChart6" // Unique ID for the 6th chart
             />
           </div>

@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from "react";
 
-import './OnlineList.css'
+import "./OnlineList.css";
 
 function ExpenseList() {
   const [username, setUsername] = useState("");
@@ -9,7 +8,9 @@ function ExpenseList() {
 
   const fetchOnlineExpenseData = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/online/${username}`);
+      const response = await fetch(
+        `https://backend-orpin-kappa.vercel.app/api/online/${username}`
+      );
 
       if (response.status === 200) {
         const data = await response.json();

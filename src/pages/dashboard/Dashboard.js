@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import "./Dashboard.css";
@@ -17,15 +16,15 @@ import Col from "react-bootstrap/Col";
 import { Box, Button } from "@mui/material";
 
 const Dashboard = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const handelNavigate =() => {
-    navigate("/")
-  }
+  const handelNavigate = () => {
+    navigate("/");
+  };
 
   const handelOpenResponsePage = () => {
-    navigate("/response")
-  }
+    navigate("/response");
+  };
 
   return (
     <>
@@ -50,8 +49,8 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Online Expense"
-                apiUrl="http://localhost:5000/api/online"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/online"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
@@ -67,7 +66,10 @@ const Dashboard = () => {
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Electricity Expense */}
         <Container fluid>
@@ -85,14 +87,17 @@ const Dashboard = () => {
             <Col sm={6} style={{ marginLeft: -28, marginTop: 4 }}>
               <ExpenseForm
                 heading="Electricity Expense"
-                apiUrl="http://localhost:5000/api/consumption"
-                style={{height: 450}}
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
+                style={{ height: 450 }}
               />
             </Col>
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Investment */}
         <Container fluid>
@@ -100,8 +105,8 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Investment"
-                apiUrl="http://localhost:5000/api/investment"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/investment"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
@@ -117,7 +122,10 @@ const Dashboard = () => {
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Travel Expense */}
         <Container fluid>
@@ -135,14 +143,17 @@ const Dashboard = () => {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Travel Expense"
-                apiUrl="http://localhost:5000/api/travel"
-                style={{height: 450}}
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/travel"
+                style={{ height: 450 }}
               />
             </Col>
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Personal Expenses */}
         <Container fluid>
@@ -150,8 +161,8 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Personal Expenses"
-                apiUrl="http://localhost:5000/api/personal"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/personal"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
@@ -167,7 +178,10 @@ const Dashboard = () => {
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Grocery */}
         <Container fluid>
@@ -185,14 +199,17 @@ const Dashboard = () => {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Liability"
-                apiUrl="http://localhost:5000/api/consumption"
-                style={{height: 450}}
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
+                style={{ height: 450 }}
               />
             </Col>
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Salary */}
         <Container fluid>
@@ -200,8 +217,8 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Salary"
-                apiUrl="http://localhost:5000/api/salary"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-orpin-kappa.vercel.app/api/salary"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
