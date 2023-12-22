@@ -17,7 +17,6 @@ import Profile from "../../pages/Login/Profile";
 export default function ButtonAppBar() {
   const [open, setOpen] = useState(false);
   
-
   const { account, setAccount } = useContext(DataContext);
 
   const openDialog = () => {

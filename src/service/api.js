@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "https://backend-orpin-kappa.vercel.app/";
+const URL = "https://backend-orpin-kappa.vercel.app";
 
 export const authenticateSignup = async (data) => {
   try {
