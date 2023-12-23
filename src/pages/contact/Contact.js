@@ -13,13 +13,16 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://backend-orpin-kappa.vercel.app/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, message }),
-      });
+      const response = await fetch(
+        "https://backend-sujeet2801.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, message }),
+        }
+      );
 
       if (response.ok) {
         // Handle success, e.g., reset form

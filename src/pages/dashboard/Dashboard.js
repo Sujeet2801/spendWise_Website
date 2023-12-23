@@ -49,7 +49,7 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Online Expense"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/online"
+                apiUrl="https://backend-sujeet2801.vercel.app/api/online"
                 style={{ marginTop: 10 }}
               />
             </Col>
@@ -87,7 +87,7 @@ const Dashboard = () => {
             <Col sm={6} style={{ marginLeft: -28, marginTop: 4 }}>
               <ExpenseForm
                 heading="Electricity Expense"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
+                apiUrl="https://backend-sujeet2801.vercel.app/api/consumption"
                 style={{ height: 450 }}
               />
             </Col>
@@ -105,7 +105,7 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Investment"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/investment"
+                apiUrl="https://backend-sujeet2801.vercel.app/api/investment"
                 style={{ marginTop: 10 }}
               />
             </Col>
@@ -143,7 +143,7 @@ const Dashboard = () => {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Travel Expense"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/travel"
+                apiUrl="https://backend-sujeet2801.vercel.app/api/travel"
                 style={{ height: 450 }}
               />
             </Col>
@@ -161,7 +161,7 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Personal Expenses"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/personal"
+                apiUrl="https://backend-sujeet2801.vercel.app/api/personal"
                 style={{ marginTop: 10 }}
               />
             </Col>
@@ -199,7 +199,7 @@ const Dashboard = () => {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Liability"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
+                apiUrl="https://backend-sujeet2801.vercel.app/api/consumption"
                 style={{ height: 450 }}
               />
             </Col>
@@ -217,7 +217,7 @@ const Dashboard = () => {
             <Col sm={6}>
               <ExpenseForm
                 heading="Salary"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/salary"
+                apiUrl="https://backend-sujeet2801.vercel.app/api/salary"
                 style={{ marginTop: 10 }}
               />
             </Col>

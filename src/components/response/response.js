@@ -45,74 +45,73 @@ export default function Response() {
 
         {showBarCharts && (
           <div className="container">
-            
             {/* Electricity Expense Chart */}
             <ConsumptionChart
               heading="Electricity Expense Chart"
-              apiUrl={`https://backend-orpin-kappa.vercel.app/api/consumption/${username}`}
+              apiUrl={`https://backend-sujeet2801.vercel.app/api/consumption/${username}`}
               id="myChart1" // Unique ID for the first chart
             />
             {/* Online Expense Chart */}
             <ConsumptionChart
               heading="Online Expense Chart"
-              apiUrl={`https://backend-orpin-kappa.vercel.app/api/online/${username}`}
+              apiUrl={`https://backend-sujeet2801.vercel.app/api/online/${username}`}
               id="myChart2" // Unique ID for the second chart
             />
             {/* Investment Chart */}
             <ConsumptionChart
               heading="Investment Chart"
-              apiUrl={`https://backend-orpin-kappa.vercel.app/api/investment/${username}`}
+              apiUrl={`https://backend-sujeet2801.vercel.app/api/investment/${username}`}
               id="myChart3" // Unique ID for the third chart
             />
 
             {/* Salary Chart */}
             <ConsumptionChart
               heading="Salary Chart"
-              apiUrl={`https://backend-orpin-kappa.vercel.app/api/salary/${username}`}
+              apiUrl={`https://backend-sujeet2801.vercel.app/api/salary/${username}`}
               id="myChart4" // Unique ID for the third chart
             />
 
             {/* Travel Expense Chart */}
             <ConsumptionChart
               heading="Travel Expense Chart"
-              apiUrl={`https://backend-orpin-kappa.vercel.app/api/travel/${username}`}
+              apiUrl={`https://backend-sujeet2801.vercel.app/api/travel/${username}`}
               id="myChart5" // Unique ID for the third chart
             />
 
             {/* Personal Expenses */}
             <ConsumptionChart
               heading="Personal Expenses Chart"
-              apiUrl={`https://backend-orpin-kappa.vercel.app/api/personal/${username}`}
+              apiUrl={`https://backend-sujeet2801.vercel.app/api/personal/${username}`}
               id="myChart6" // Unique ID for the 6th chart
             />
           </div>
         )}
 
-          {/* Add expense and Update button */}
-          <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            marginTop={6}
+        {/* Add expense and Update button */}
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          marginTop={6}
+        >
+          <Button
+            variant="contained"
+            color="success"
+            style={{ width: 190, height: 50, fontSize: 16 }}
+            onClick={handelOpenResponsePage}
           >
-            <Button
-              variant="contained"
-              color="success"
-              style={{ width: 190, height: 50, fontSize: 16 }}
-              onClick={handelOpenResponsePage}
-            >
-              Add expense
-            </Button>
+            Add expense
+          </Button>
 
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ width: 190, height: 50, fontSize: 16, marginLeft: 5 }}
-              onClick={handelNavigate}
-            >
-              Update Expense
-            </Button>
-          </Box>
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ width: 190, height: 50, fontSize: 16, marginLeft: 5 }}
+            onClick={handelNavigate}
+          >
+            Update Expense
+          </Button>
+        </Box>
       </div>
     </>
   );

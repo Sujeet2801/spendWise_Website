@@ -9,7 +9,7 @@ function ExpenseList() {
   const fetchOnlineExpenseData = async () => {
     try {
       const response = await fetch(
-        `https://backend-orpin-kappa.vercel.app/api/online/${username}`
+        `https://backend-sujeet2801.vercel.app/api/online/${username}`
       );
 
       if (response.status === 200) {

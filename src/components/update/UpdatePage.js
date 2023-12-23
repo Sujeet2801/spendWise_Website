@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import "./Update.css";
@@ -26,8 +25,9 @@ export default function UpdatePage() {
         <div class="text-center" style={{ marginTop: 20 }}>
           <h2 style={{ fontSize: 39 }}>Update your expenses here</h2>
           <p>
-          "Effortless finance tracking: Streamline your spending with ease, 
-          update your expenses here for a smarter, stress-free financial journey."
+            "Effortless finance tracking: Streamline your spending with ease,
+            update your expenses here for a smarter, stress-free financial
+            journey."
           </p>
         </div>
       </div>
@@ -39,8 +39,8 @@ export default function UpdatePage() {
             <Col sm={6}>
               <UpdateForm
                 heading="Online Expense"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/online"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-sujeet2801.vercel.app/api/online"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
@@ -55,7 +55,10 @@ export default function UpdatePage() {
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 67, width: 1080}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 67, width: 1080 }}
+        ></hr>
 
         {/* Electricity Expense */}
         <Container fluid>
@@ -73,14 +76,17 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -72, marginTop: 4 }}>
               <UpdateForm
                 heading="Electricity Expense"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
-                style={{height: 450}}
+                apiUrl="https://backend-sujeet2801.vercel.app/api/consumption"
+                style={{ height: 450 }}
               />
             </Col>
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 67, width: 1080}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 67, width: 1080 }}
+        ></hr>
 
         {/* Investment */}
         <Container fluid>
@@ -88,8 +94,8 @@ export default function UpdatePage() {
             <Col sm={6}>
               <UpdateForm
                 heading="Investment"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/investment"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-sujeet2801.vercel.app/api/investment"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
@@ -105,7 +111,10 @@ export default function UpdatePage() {
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Travel Expense */}
         <Container fluid>
@@ -123,14 +132,17 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Travel Expense"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/travel"
-                style={{height: 450}}
+                apiUrl="https://backend-sujeet2801.vercel.app/api/travel"
+                style={{ height: 450 }}
               />
             </Col>
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Personal Expenses */}
         <Container fluid>
@@ -138,8 +150,8 @@ export default function UpdatePage() {
             <Col sm={6}>
               <ExpenseForm
                 heading="Personal Expenses"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/personal"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-sujeet2801.vercel.app/api/personal"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
@@ -155,7 +167,10 @@ export default function UpdatePage() {
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Grocery */}
         <Container fluid>
@@ -173,14 +188,17 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Liability"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/consumption"
-                style={{height: 450}}
+                apiUrl="https://backend-sujeet2801.vercel.app/api/consumption"
+                style={{ height: 450 }}
               />
             </Col>
           </Row>
         </Container>
 
-        <hr class="featurette-divider" style={{marginLeft: 46, width: 1025}}></hr>
+        <hr
+          class="featurette-divider"
+          style={{ marginLeft: 46, width: 1025 }}
+        ></hr>
 
         {/* Salary */}
         <Container fluid>
@@ -188,8 +206,8 @@ export default function UpdatePage() {
             <Col sm={6}>
               <ExpenseForm
                 heading="Salary"
-                apiUrl="https://backend-orpin-kappa.vercel.app/api/salary"
-                style={{marginTop: 10}}
+                apiUrl="https://backend-sujeet2801.vercel.app/api/salary"
+                style={{ marginTop: 10 }}
               />
             </Col>
             <Col sm={6}>
@@ -204,7 +222,6 @@ export default function UpdatePage() {
             </Col>
           </Row>
         </Container>
-
       </div>
     </>
   );
