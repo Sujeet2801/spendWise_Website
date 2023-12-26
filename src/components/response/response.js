@@ -5,6 +5,8 @@ import { TextField, Button, Box } from "@mui/material";
 import ConsumptionChart from "../../pages/chart/Line";
 import { useNavigate } from "react-router-dom";
 
+const URL = "https://backend-sujeet2801.vercel.app" || "http://localhost:5000"
+
 export default function Response() {
   const [username, setUsername] = useState("");
   const [showBarCharts, setShowBarCharts] = useState(false);
@@ -48,40 +50,40 @@ export default function Response() {
             {/* Electricity Expense Chart */}
             <ConsumptionChart
               heading="Electricity Expense Chart"
-              apiUrl={`https://backend-sujeet2801.vercel.app/api/consumption/${username}`}
+              apiUrl={`${URL}/api/consumption/${username}`}
               id="myChart1" // Unique ID for the first chart
             />
             {/* Online Expense Chart */}
             <ConsumptionChart
               heading="Online Expense Chart"
-              apiUrl={`https://backend-sujeet2801.vercel.app/api/online/${username}`}
+              apiUrl={`${URL}/api/online/${username}`}
               id="myChart2" // Unique ID for the second chart
             />
             {/* Investment Chart */}
             <ConsumptionChart
               heading="Investment Chart"
-              apiUrl={`https://backend-sujeet2801.vercel.app/api/investment/${username}`}
+              apiUrl={`${URL}/api/investment/${username}`}
               id="myChart3" // Unique ID for the third chart
             />
 
             {/* Salary Chart */}
             <ConsumptionChart
               heading="Salary Chart"
-              apiUrl={`https://backend-sujeet2801.vercel.app/api/salary/${username}`}
+              apiUrl={`${URL}/api/salary/${username}`}
               id="myChart4" // Unique ID for the third chart
             />
 
             {/* Travel Expense Chart */}
             <ConsumptionChart
               heading="Travel Expense Chart"
-              apiUrl={`https://backend-sujeet2801.vercel.app/api/travel/${username}`}
+              apiUrl={`${URL}/api/travel/${username}`}
               id="myChart5" // Unique ID for the third chart
             />
 
             {/* Personal Expenses */}
             <ConsumptionChart
               heading="Personal Expenses Chart"
-              apiUrl={`https://backend-sujeet2801.vercel.app/api/personal/${username}`}
+              apiUrl={`${URL}/api/personal/${username}`}
               id="myChart6" // Unique ID for the 6th chart
             />
           </div>
