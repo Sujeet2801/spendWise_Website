@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "https://backend-sujeet2801.vercel.app" || "http://localhost:5000/";
+const URL = "http://localhost:5000";
 
 export const authenticateSignup = async (data) => {
   try {
