@@ -14,6 +14,8 @@ import Col from "react-bootstrap/Col";
 
 // import { Box, Button } from "@mui/material";
 
+const URL = 'https://backend-sujeet2801.vercel.app' || "http://localhost:5000"
+
 export default function UpdatePage() {
   return (
     <>
@@ -39,7 +41,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <UpdateForm
                 heading="Online Expense"
-                apiUrl="https://backend-sujeet2801.vercel.app/api/online"
+                apiUrl={`${URL}/api/online`}
                 style={{ marginTop: 10 }}
               />
             </Col>
@@ -76,7 +78,7 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -72, marginTop: 4 }}>
               <UpdateForm
                 heading="Electricity Expense"
-                apiUrl="https://backend-sujeet2801.vercel.app/api/consumption"
+                apiUrl={`${URL}/api/consumption`}
                 style={{ height: 450 }}
               />
             </Col>
@@ -94,7 +96,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <UpdateForm
                 heading="Investment"
-                apiUrl="https://backend-sujeet2801.vercel.app/api/investment"
+                apiUrl={`${URL}/api/investment`}
                 style={{ marginTop: 10 }}
               />
             </Col>
@@ -132,7 +134,7 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Travel Expense"
-                apiUrl="https://backend-sujeet2801.vercel.app/api/travel"
+                apiUrl={`${URL}/api/travel`}
                 style={{ height: 450 }}
               />
             </Col>
@@ -150,7 +152,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <ExpenseForm
                 heading="Personal Expenses"
-                apiUrl="https://backend-sujeet2801.vercel.app/api/personal"
+                apiUrl={`${URL}/api/personal`}
                 style={{ marginTop: 10 }}
               />
             </Col>
@@ -188,7 +190,7 @@ export default function UpdatePage() {
             <Col sm={6} style={{ marginLeft: -32, marginTop: 4 }}>
               <ExpenseForm
                 heading="Liability"
-                apiUrl="https://backend-sujeet2801.vercel.app/api/consumption"
+                apiUrl={`${URL}/api/consumption`}
                 style={{ height: 450 }}
               />
             </Col>
@@ -206,7 +208,7 @@ export default function UpdatePage() {
             <Col sm={6}>
               <ExpenseForm
                 heading="Salary"
-                apiUrl="https://backend-sujeet2801.vercel.app/api/salary"
+                apiUrl={`${URL}/api/salary`}
                 style={{ marginTop: 10 }}
               />
             </Col>
