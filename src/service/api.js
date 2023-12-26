@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const URL = "https://backend-sujeet2801.vercel.app/";
+const URL = "https://backend-sujeet2801.vercel.app" || "http://localhost:5000";
 
 export const authenticateSignup = async (data) => {
   try {
-    return await axios.post(`${URL}api/signup`, data);
+    return await axios.post(`/${URL}api/signup`, data);
   } catch (error) {
     console.log("Error while calling signup api", error);
   }
@@ -12,7 +12,7 @@ export const authenticateSignup = async (data) => {
 
 export const authenticateLogin = async (data) => {
   try {
-    return await axios.post(`${URL}api/login`, data);
+    return await axios.post(`/${URL}api/login`, data);
   } catch (error) {
     console.log("Error while calling login api", error);
     return error.response;
